@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
 
 import './App.css';
-import { UsersTable } from './components/UsersTable';
-import { UserForm } from './components/UserForm';
+import { NewsTable } from './components/NewsTable';
+import { NewsForm } from './components/NewForm';
 
 function App() {
-  const [users, setUsers] = useState([]);
+  const [news, setNews] = useState([]);
 
   useEffect(()=>{
     const getData = async()=>{ }
@@ -16,8 +16,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <UserForm/>
-        <UsersTable users={users}/>
+        <NewsForm/>
+        <NewsTable news={news}/>
       </header>
     </div>
   );
